@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Barini Simhadri Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+<style>
+
+/*======================================
+//--//-->   ABOUT
+======================================*/
+
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
+}
+
+
+.skill-mf .progress {
+  /* background-color: #cde1f8; */
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #ffbd39;
+}
+
+
+/* Animation styles */
+#typing-animation {
+  position: relative;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3s steps(20, end) infinite;
+}
+
+#typing-animation:before {
+  content: "";
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  animation: typing-cursor 0.5s ease-in-out infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing-cursor {
+  from {
+    width: 5px;
+  }
+  to {
+    width: 0;
+  }
+}
+
+
+/* project image zoom effect */
+
+.zoom-effect {
+  overflow: hidden;
+  transition: transform 0.3s ease-out;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.1);
+}
+
+
+</style>
+
+
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">Barini Simhadri</a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About Me</span></a></li>
+			  
+	          <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact Info</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  <section id="home-section" class="hero">
+		  <div class="home-slider  owl-carousel">
+	       <div class="slider-item ">
+	      	<div class="overlay"></div>
+	         <div class="container">
+	          <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+	          	<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/last.png);">
+	          	 <div class="overlay"></div>
+	          	</div>
+		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+		          	<div class="text">
+		          		<span class="subheading">Hola!</span>
+			            <h1 class="mb-4 mt-3">I'm <span>BARINI SIMHADRI</span></h1>
+
+						<!-- Element to contain animated typing -->
+						<span id="typing-animation"></span>
+
+						<script>
+
+						// Initialize the typing animation
+						const typingAnimationElement = document.getElementById('typing-animation');
+
+						// Create an array of typing text
+						const typingTexts = [
+						'"Turning caffeine into insights since day one."',
+						];
+
+						// Create a function to display the typing animation for a given text
+						function playTypingAnimation(text) {
+						// Loop through each character and add it to the element
+						for (let i = 0; i < text.length; i++) {
+							setTimeout(() => {
+							typingAnimationElement.textContent += text[i];
+							}, i * 200); // Increase the delay to slow down the typing animation
+						}
+
+						// Once the animation is complete, reset the text and start over
+						setTimeout(() => {
+							typingAnimationElement.textContent = '';
+							playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+						}, text.length * 200);
+						}
+
+						// Start the typing animation loop
+						playTypingAnimation(typingTexts[0]);
+
+						</script>
+
+						<br>
+						<br>
+			            <h2>A Passionate Data Analyst</h2>
+						<!-- <h2 class="d-flex" style="margin-bottom: 0">With over 5 years of experience</h2> -->
+						<!-- <br> -->
+			            <p><a href="https://www.linkedin.com/in/barinisimhadri/" class="btn btn-primary py-3 px-4">Linkedin</a> 
+							<a href="https://github.com/barinisimhadri06?tab=repositories" class="btn btn-white btn-outline-white py-3 px-4">GitHub</a></p>
+		            </div>
+		          </div>
+	        	</div>
+	        </div>
+	      </div>
+		</div>
+    </section>
+
+
+
+    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+    	<div class="container">
+			<div class="row">
+				<div class="row d-flex align-items-stretch">
+				<!-- <div class="row d-flex"> -->
+					<div class="col-md-6 col-lg-5 d-flex">
+						<div class="img-about img d-flex align-items-stretch">
+							<div class="overlay">
+								<div class="row">
+									<div class="col-sm-6 col-md-5">
+									  <div class="about-img">
+										<img src="images/Picture1.png" class="img-fluid rounded b-shadow-a" alt="">
+									  </div>
+									</div>
+									<!-- Details next to profile image -->
+									<div class="col-sm-6 col-md-7">
+									  <div class="about-info">
+										<p><span class="title-s">Name: </span> <span>Barini Simhadri</span></p>
+										<p><span class="title-s">Job Role: </span> <span>Data Analyst</span></p>
+										<p><span class="title-s">Education: </span> <span>Master's in Business Analytics</span></p>
+										<p><span class="title-s">Location: </span> <span>Chicago,IL,USA</span></p>
+									  </div>
+									</div>
+								  </div>
+
+								<div class="skill-mf">
+									<p class="title-s">Skillset</p>
+									<span>SQL</span> <span class="pull-right">95%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+
+									<span>Excel</span> <span class="pull-right">95%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>PYTHON</span> <span class="pull-right">90%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+
+									<span>R</span> <span class="pull-right">90%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>TABLEAU AND POWERBI</span> <span class="pull-right">100%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Statistics</span> <span class="pull-right">100%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+
+									<span>Supervised Algorithms</span> <span class="pull-right">90%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+									
+									<span>Unsupervised Algorithms</span> <span class="pull-right">90%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+
+									<span>Deep Learning</span> <span class="pull-right">90%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+
+									<span></span>cloud(Azure/AWS) <span class="pull-right">80%</span>
+									<div class="progress">
+										<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
+											aria-valuemax="100"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+						<div class="row justify-content-start pb-3">
+							<div class="col-md-12 heading-section ftco-animate">
+								
+								<h1 class="big">About</h1>
+								<h2 class="mb-4">About Me</h2>
+								
+								<p>Ever since I was young, I’ve been fascinated by the stories hidden in data those patterns and insights that can change everything. This curiosity led me to earn a Bachelor’s in Business Administration and continue with a Master’s in Business Analytics at DePaul University. I love learning new things, and my education was filled with that passion for diving deep into the world of numbers.
+									Over 5 years as a Data Analyst, I was like a detective for data. I cleaned messy datasets, used tools like Python and R to build models, and created dashboards in Tableau and Power BI that turned complex information into clear insights for our clients. I also worked with big data tools like Hadoop and Spark to tackle large datasets. My work helped clients in India, the USA, and the UK improve their digital experiences and make smarter decisions.
+									I’m always eager to learn and grow. I’ve earned certifications in Data Science from Google and Microsoft. I enjoy keeping up with the latest tools and techniques, making sure I’m always at the cutting edge of my field.
+									
+									At the heart of everything I do is a genuine love for data.
+									</p>
+								<ul class="about-info mt-4 px-md-0 px-2">
+									<li class="d-flex"><span>Profile:</span> <span>Data Science &amp; Analytics</span></li>
+									<li class="d-flex"><span>Domain:</span> <span> Finance, Retail, Ecommerce, Healthcare. </span></li>
+									<li class="d-flex"><span>Education:</span> <span>Master's in Business Analytics</span></li>
+									<li class="d-flex"><span>Language:</span> <span>English</span></li>
+									<li class="d-flex"><span>Interests:</span> <span>Podcasting,Piano & Spanish in Progress</span></li>
+									
+								</ul>
+							</div>
+						</div>
+
+
+						<div class="counter-wrap ftco-animate d-flex mt-md-3">
+							<div class="text">
+								<p class="mb-4">
+									<span class="number" data-number="14">0</span> <span>+</span>
+									<span>&nbsp; Projects Record</span>
+								</p>
+								<p><a href="https://www.linkedin.com/in/barinisimhadri/" class="btn btn-primary py-3 px-3">LinkedIn</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </section>
+
+
+
+	
+    <section class="ftco-section ftco-no-pb" id="resume-section">
+    	<div class="container">
+    		<div class="row justify-content-center pb-5">
+          <div class="col-md-10 heading-section text-center ftco-animate">
+          	<h1 class="big big-2">Certified</h1>
+            <h2 class="mb-4">Certified by
+				Google & Microsoft
+			</h2>
+            <p>Mixed with unique challenges and Learning Experiences</p>
+          </div>
+        </div>
+
+		<div class="row">
+			<h1 class="big-4">Certificates</h1>
+			<div class="underline"></div>
+		</div>
+		<br>
+		
+		<div class="row">
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">MICROSOFT POWER BI ANALYST</span>
+						<h2></h2>
+						<span class="position">JANUARY 2024</span>
+						<p class="mt-4">
+							<ul>
+								<li>Prepared Data for Analysis with Microsoft Excel</li>
+								<li>Extract, Transform and Load Data in Power BI</li>
+								<li>Data Modeling in Power BI</li>
+								<li>Data Analysis and Visualization with Power BI</li>
+								<li>Creative Designing in Power BI</li>
+							</ul>
+							<p><a href="https://coursera.org/share/953654535c42f9ed12707179b1c5f529" class="btn btn-primary py-4 px-5">View it here</a></p>	
+						</p>
+					</div>
+
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">MICROSOFT AZURE DATA SCIENTIST ASSOCIATE</span>
+						<h2></h2>
+						<span class="position">DECEMBER 2023</span>
+						<p class="mt-4">
+							<ul>
+								<li>Created Machine Learning Models in Microsoft Azure</li>
+								<li>Perform data science with Azure Databricks</li>
+								<li>Prepared for DP-100: Data Science on Microsoft Azure Exam</li>
+							</ul>
+							<p><a href="https://coursera.org/share/a75b2bee82bfad7bb53f245a937cad68" class="btn btn-primary py-4 px-5">View it here</a></p>	
+						</p>
+					</div>
+
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">STANFORD MACHINE LEARNING</span>
+						<h2></h2>
+						<span class="position">NOVEMBER 2023</span>
+						<p class="mt-4">
+							<ul>
+								<li>Supervised Machine Learning: Regression and Classification</li>
+								<li>Advanced Learning Algorithms</li>
+								<li>Unsupervised Learning,Recommenders,
+									Reinforcement Learning</li>
+							</ul>
+							<p><a href="https://coursera.org/share/08088f1b9f0be01cbc378fe90ab879f5" class="btn btn-primary py-4 px-5">View it here</a></p>	
+						</p>
+					</div>
+				
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">UC SAN DIEGO BIGDATA</span>
+						<h2></h2>
+						<span class="position">DECEMBER 2023</span>
+						<p class="mt-4">
+							<ul>
+								<li>Understanding of graph analytics and its role in problem-solving.</li>
+								<li>Proficiency in exploring and analyzing large datasets.
+									Application of learned skills in a real-world Capstone Project.</li>
+							</ul>
+							<p><a href="https://coursera.org/share/5e47fd071d8130951ca69b827f05126c" class="btn btn-primary py-4 px-5">View it here</a></p>	
+						</p>
+					</div>
+					
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">IBM DATA SCIENCE</span>
+						<h2></h2>
+						<span class="position">August 2023</span>
+						<p class="mt-4">
+							<ul>
+								<li>Hands-on skills in Data Science and Machine Learning</li>
+								<li>Proficiency in Python and SQL for data manipulation and analysis</li>
+								<li>Data visualization and analysis techniques using Python</li>
+							</ul>
+							<p><a href="https://coursera.org/share/42899a162bdedef94111e7a167117a7e" class="btn btn-primary py-4 px-5">View it here</a></p>	
+						</p>
+					</div>
+				
+				</div>
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">GOOGLE ADVANCED DATA ANALYTICS</span>
+						<h2></h2>
+						<span class="position">MAY 2023</span>
+						<p class="mt-4">
+							<ul>
+								<li>Advanced data analysis techniques</li>
+								<li>Statistical methods for extracting insights from data</li>
+								<li>Application of machine learning algorithms</li>
+							</ul>
+							<p><a href="https://coursera.org/share/07b880184432b0aac3fa4f6c762371ed" class="btn btn-primary py-4 px-5">View it here</a></p>	
+						</p>
+					</div>
+				
+				</div>		
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">STANFORD STATISTICS</span>
+						<h2></h2>
+						<span class="position">NOVEMBER 2023</span>
+						<p class="mt-4">
+							<ul>
+								<li>Basics of probability theory and its applications.</li>
+								<li>Introduction to inferential statistics and hypothesis testing.</li>
+								<li>regression analysis and its use in predictive modeling</li>
+							</ul>
+							<p><a href="https://coursera.org/share/9265df7b4a3bc20ed486dc2a23cf0c9c" class="btn btn-primary py-4 px-5">View it here</a></p>	
+						</p>
+					</div>
+
+				</div>	
+
+				<div class="col-md-6">
+					<div class="resume-wrap ftco-animate">
+						<span class="date">GOOGLE BUSINESS INTELLIGENCE</span>
+						<h2></h2>
+						<span class="position">AUGUST 2023</span>
+						<p class="mt-4">
+							<ul>
+								<li>Foundations of Business Intelligence</li>
+								<li>The Path to Insights: DataModels and Pipelines Decisions</li>
+								<li>Decisions: Dashboards and Reports</li>
+							</ul>
+							<p><a href="https://coursera.org/share/06fce301e6ba3b679431cafe96e14682" class="btn btn-primary py-4 px-5">View it here</a></p>	
+						</p>
+					</div>	
+				</div>
+			</div>		
+
+		<br>
+		<br>
+
+		
+
+    		<div class="row justify-content-center mt-5">
+    			<div class="col-md-6 text-center ftco-animate">
+    				<p><a href="" class="btn btn-primary py-4 px-5">Let's talk to data daily!</a></p>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+
+   
+
+    <section class="ftco-section" id="project-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">PROJECTS</h1>
+            <h2 class="mb-4">PROJECTS</h2>
+            <p>"Applying Theoretical Knowledge into the Real world."</p>
+          </div>
+        </div>
+        <div class="row d-flex">
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://github.com/barinisimhadri06/Zillow_Zestimate_prediction" class="block-20 zoom-effect" style="background-image: url('images/zillow.jpeg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/barinisimhadri06/Zillow_Zestimate_prediction">Zillow Zestimate Home Value Prediction</a></h3>
+                <p>This project aims to create a machine learning model for predicting future home sales, leveraging Zillow's Zestimate to assist homebuyers in finding their ideal property.This model helps to enhance accuracy in estimating the real worth of houses. this initiative seeks to simplify the quest for a dream home by providing reliable predictions based on location, area, budget, and other factors.</p>
+				<p><a href="https://github.com/barinisimhadri06/Zillow_Zestimate_prediction" class="btn btn-primary py-4 px-5">Glance at this project</a></p>	
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://github.com/barinisimhadri06/Ola_Bike_Rides_Prediction" class="block-20 zoom-effect" style="background-image: url('images/ola.png');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/barinisimhadri06/Ola_Bike_Rides_Prediction">OLA Bike Rides Request Demand Forecast</a></h3>
+                <p>The goal is to forecast ride requests for a specific geographic location within a designated future time window, aiding Ola Bikes in optimizing driver allocation and meeting user ride demands efficiently. Utilizing predictive models, this initiative aims to accurately anticipate the expected demand for rides in a specified region based on latitude, longitude, and time parameters.</p>
+				<p><a href="https://github.com/barinisimhadri06/Ola_Bike_Rides_Prediction" class="btn btn-primary py-4 px-5">Glance at this project</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry">
+              <a href="https://github.com/barinisimhadri06/Expedia_Hotel_Recommendations" class="block-20 zoom-effect" style="background-image: url('images/hotel.jpeg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+
+                <h3 class="heading"><a href="https://github.com/barinisimhadri06/Expedia_Hotel_Recommendations">Expedia Hotel Recommendations</a></h3>
+                <p>Expedia endeavors to streamline hotel choices with personalized recommendations for users, addressing the complexity of serving a substantial monthly visitor volume. Presently reliant on search parameters, Expedia aims to refine personalization due to inadequate individual customer data, seeking an improved strategy for effectively tailoring hotel suggestions based on each user's preferences.</p>
+				<p><a href="https://github.com/barinisimhadri06/Expedia_Hotel_Recommendations" class="btn btn-primary py-4 px-5">Glance at this project</a></p>
+              </div>
+            </div>
+          </div>
+		  <div class="col-md-4 d-flex ftco-animate">
+			<div class="blog-entry justify-content-end">
+			<a href="https://github.com/barinisimhadri06/Fradualent_Transaction_Detection" class="block-20 zoom-effect" style="background-image: url('images/fraudtransaction.png');">
+			</a>
+			<div class="text mt-3 float-right d-block">
+
+			  <h3 class="heading"><a href="https://github.com/barinisimhadri06/Fradualent_Transaction_Detection">Fradualent Transaction Detection</a></h3>
+			  <p>Utilizing machine learning techniques like Isolation Forest and Local Outlier Factor, this project aims to detect fraudulent transactions in the banking industry in real-time. Isolation Forest, an unsupervised algorithm, identifies anomalies based on the 'few and different' principle using randomly sub-sampled data processed in tree structures. Meanwhile, LOF, another unsupervised algorithm, identifies outliers by evaluating local density, focusing on points deviating from local clusters rather than the entire data distribution in order to enhance fraud detection measures.</p>
+			  <p><a href="https://github.com/barinisimhadri06/Fradualent_Transaction_Detection" class="btn btn-primary py-4 px-5">Glance at this project</a></p>
+			</div>
+		  </div>
+		</div>
+		<div class="col-md-4 d-flex ftco-animate">
+			<div class="blog-entry justify-content-end">
+			<a href="https://github.com/barinisimhadri06/Drivers_Availability_Prediction" class="block-20 zoom-effect" style="background-image: url('images/driver.jpeg');">
+			</a>
+			<div class="text mt-3 float-right d-block">
+
+			  <h3 class="heading"><a href="https://github.com/barinisimhadri06/Drivers_Availability_Prediction">Demand Prediction of Drivers Availability</a></h3>
+			  <p>This project addresses the task of forecasting driver hours through a multi-step time series approach. It employs several strategies including direct, recursive, hybrid, and multiple-output forecasting. These methods aim to predict future values in a time series by leveraging predictive models based on current values. The process involves dataset preparation, feature breakdown for time series analysis, and the application of predictive models to predict subsequent time steps in a step-by-step manner.</p>
+			  <p><a href="https://github.com/barinisimhadri06/Drivers_Availability_Prediction" class="btn btn-primary py-4 px-5">Glance at this project</a></p>
+			</div>
+		  </div>
+		</div>
+		<div class="col-md-4 d-flex ftco-animate">
+			<div class="blog-entry justify-content-end">
+			<a href="https://github.com/barinisimhadri06/Music_Recommendation" class="block-20 zoom-effect" style="background-image: url('images/music_Recommend.jpeg');">
+			</a>
+			<div class="text mt-3 float-right d-block">
+
+			  <h3 class="heading"><a href="https://github.com/barinisimhadri06/Music_Recommendation">Music Recommendation</a></h3>
+			  <p>This project focuses on building a music recommendation system using the KKBOX dataset, employing machine learning techniques to predict song recommendations based on users' listening patterns. As music streaming services like Spotify thrive on appropriate recommendations, the aim is to enhance user experience by accurately suggesting songs according to individual preferences, ultimately predicting the likelihood of users repeatedly listening to specific songs after their first observable listening event within a defined timeframe.</p>
+			  <p><a href="https://github.com/barinisimhadri06/Music_Recommendation" class="btn btn-primary py-4 px-5">Glance at this project</a></p>
+			</div>
+		  </div>
+		</div>
+		<div class="col-md-4 d-flex ftco-animate">
+			<div class="blog-entry justify-content-end">
+			<a href="https://github.com/barinisimhadri06/Fake_news_Classification" class="block-20 zoom-effect" style="background-image: url('images/fakenews.jpeg');">
+			</a>
+			<div class="text mt-3 float-right d-block">
+
+			  <h3 class="heading"><a href="https://github.com/barinisimhadri06/Fake_news_Classification">Fake News Classification</a></h3>
+			  <p>This project addresses the pervasive issue of fake news by leveraging Machine Learning and Artificial Intelligence to automate detection, particularly focusing on text-based online news content. The rapid evolution of digital media has amplified the spread of misleading information, emphasizing the need to differentiate between real and fake news. With the rise of unstructured data, like text articles, NLP techniques enable the identification of deceptive content.</p>
+			  <p><a href="https://github.com/barinisimhadri06/Fake_news_Classification" class="btn btn-primary py-4 px-5">Glance at this project</a></p>
+			</div>
+		  </div>
+		</div>
+		<div class="col-md-4 d-flex ftco-animate">
+			<div class="blog-entry justify-content-end">
+			<a href="https://github.com/barinisimhadri06/Rossman_stores_sales_Prediction" class="block-20 zoom-effect" style="background-image: url('images/Rossman.png');">
+			</a>
+			<div class="text mt-3 float-right d-block">
+
+			  <h3 class="heading"><a href="https://github.com/barinisimhadri06/Rossman_stores_sales_Prediction">Rossman Store Sales Prediction</a></h3>
+			  <p>The Rossman Store Sales Prediction project aims to enhance forecasting accuracy for over 3,000 drug stores across 7 European countries. Managers face challenges predicting daily sales up to six weeks ahead due to diverse influencing factors like promotions, competition, holidays, and local dynamics. By leveraging machine learning, the goal is to create a unified sales prediction model, mitigating varied accuracy issues arising from individual manager forecasts.</p>
+			  <p><a href="https://github.com/barinisimhadri06/Rossman_stores_sales_Prediction" class="btn btn-primary py-4 px-5">Glance at this project</a></p>
+			</div>
+		  </div>
+		</div>
+		<div class="col-md-4 d-flex ftco-animate">
+			<div class="blog-entry justify-content-end">
+			<a href="https://github.com/barinisimhadri06/Text_Detection_CNN" class="block-20 zoom-effect" style="background-image: url('images/text_detect.jpeg');">
+			</a>
+			<div class="text mt-3 float-right d-block">
+
+			  <h3 class="heading"><a href="https://github.com/barinisimhadri06/Text_Detection_CNN">Text Detection-CNN</a></h3>
+			  <p>This project aims to develop a Convolutional Recurrent Neural Network (CRNN) for text detection in images, leveraging the strengths of CNNs for image analysis and RNNs for sequential data. Using this model, the goal is to accurately predict text present in images, particularly focusing on images containing single-line text. The objective is to create an efficient system capable of identifying text within images, beneficial for applications like solving captchas or reading license plates.</p>
+			  <p><a href="https://github.com/barinisimhadri06/Text_Detection_CNN" class="btn btn-primary py-4 px-5">Glance at this project</a></p>
+			</div>
+		  </div>
+		</div>
+		<div class="col-md-4 d-flex ftco-animate">
+			<div class="blog-entry justify-content-end">
+			<a href="https://github.com/barinisimhadri06/Tableau" class="block-20 zoom-effect" style="background-image: url('images/Tableau.jpeg');">
+			</a>
+			<div class="text mt-3 float-right d-block">
+
+			  <h3 class="heading"><a href="https://github.com/barinisimhadri06/Tableau">Tableau</a></h3>
+			  <p>Created a Tableau project to visualize demographic trends. The project aims to convey population shifts and patterns effectively through visually appealing and interactive visualizations, facilitating informed decision-making and analysis.</p>
+			  <p><a href="https://github.com/barinisimhadri06/Tableau" class="btn btn-primary py-4 px-5">Glance at this project</a></p>
+			</div>
+		  </div>
+		</div>
+		<div class="col-md-4 d-flex ftco-animate">
+			<div class="blog-entry justify-content-end">
+			<a href="https://github.com/barinisimhadri06/Structured_Query_Language" class="block-20 zoom-effect" style="background-image: url('images/sql.jpeg');">
+			</a>
+			<div class="text mt-3 float-right d-block">
+
+			  <h3 class="heading"><a href="https://github.com/barinisimhadri06/Structured_Query_Language">Structured Query Language</a></h3>
+			  <p>SQL projects can cover a wide array of tasks, such as database design, query optimization, data manipulation, data cleaning, and more, depending on the specific goals and requirements of the project</p>
+			  <p><a href="https://github.com/barinisimhadri06/Structured_Query_Language" class="btn btn-primary py-4 px-5">Glance at this project</a></p>
+			</div>
+		  </div>
+		</div>
+		<div class="col-md-4 d-flex ftco-animate">
+			<div class="blog-entry justify-content-end">
+			<a href="https://github.com/barinisimhadri06/Sentiment_Detection" class="block-20 zoom-effect" style="background-image: url('images/LSTM.jpeg');">
+			</a>
+			<div class="text mt-3 float-right d-block">
+
+			  <h3 class="heading"><a href="https://github.com/barinisimhadri06/Sentiment_Detection">Sentiment Detection & Text Generation</a></h3>
+			  <p>This project predicts airline sentiment labels from textual reviews. The primary aim is to build accurate sentiment detection and contextually relevant text generation models using LSTM architecture.</p>
+			  <p><a href="https://github.com/barinisimhadri06/Sentiment_Detection" class="btn btn-primary py-4 px-5">Glance at this project</a></p>
+			</div>
+		  </div>
+		</div>
+        </div>
+	<br>
+		<!-- added justify-content-center to center align the last two projects -->
+		<div class="row d-flex justify-content-center">  
+			<div class="col-md-4 d-flex ftco-animate">
+				<div class="blog-entry justify-content-end">
+				<a href="https://github.com/rishabhnmishra/sales_forecasting/tree/main" class="block-20 zoom-effect" style="background-image: url('images/proj_4.jpg');">
+				</a>
+				<div class="text mt-3 float-right d-block">
+  
+				  <h3 class="heading"><a href=""></a></h3>
+				  <p></p>
+				  <p><a href="https://github.com/barinisimhadri06?tab=repositories" class="btn btn-primary py-4 px-5">Explore More Projects</a></p>
+				</div>
+			  </div>
+			</div>
+		 </div>
+	  </div>
+    </section>
+
+	<section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+      <div class="container">
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18">
+              <div class="text">
+                <strong class="number" data-number="14">0</strong>
+                <span>Projects</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+	
+	  <div class="ftco-section ftco-hireme img margin-top" style="background-image: url(images/bg_1.jpg)">
+			<!-- <div class="container"> -->
+				<div class="row justify-content-center">
+					<div class="col-md-7 ftco-animate text-center">
+						<div class="heading"> <h4>"Thank You for Engaging with my Portfolio!"</h4>
+						<br>
+						</div>
+					</div>
+				</div>
+			<!-- </div> -->
+		</div>
+	</section>
+
+
+
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Contact</h1>
+            <h2 class="mb-4">Let's connect!</h2>
+            <p>Feel Free to reach out to me!</p>
+          </div>
+        </div>
+		  <div class="container">
+			<br>
+			<br>
+			<div class="row justify-content-center">
+				<div class="col-md-7 ftco-animate text-center">
+					<h2>Have a<span> Question?  </span> <a href="https://forms.gle/8E82ReoGY2AEXyMG6" class="btn btn-primary py-3 px-5">
+						Click Here</a> </h2>
+				</div>
+			</div>
+				<br>
+					<ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+					  <li class="ftco-animate normal-txt">Find me on</li>
+					  <li class="ftco-animate"><a href="https://www.linkedin.com/in/barinisimhadri/"><span class="icon-linkedin"></span></a></li>  
+					  <li class="ftco-animate"><a href="https://github.com/barinisimhadri06?tab=repositories"><span class="icon-github"></span></a></li>
+
+					</ul>
+				<br>
+		   </div>
+   </div>
+ </section>
+
+
+ 
+	
+    <footer class="ftco-footer ftco-section">
+		<div class="container">
+		  <div class="row">
+			<div class="col-md-12 text-center">
+  
+			  <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+	Copyright &copy;<script>document.write(new Date().getFullYear());</script> <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+	<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+			</div>
+		  </div>
+		</div>
+	  </footer>
+
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
